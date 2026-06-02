@@ -1,5 +1,5 @@
 .shiny-text {
-  /* Enhanced chrome effect with metallic gradient */
+  /* 3D Chrome effect with depth */
   background: linear-gradient(120deg, #e8e8e8 0%, #ffffff 25%, #e0e0e0 50%, #ffffff 75%, #e8e8e8 100%);
   background-size: 200% 100%;
   -webkit-background-clip: text;
@@ -7,8 +7,16 @@
   -webkit-text-fill-color: transparent;
   display: inline-block;
   animation: chromeShine 5s linear infinite;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3)) 
+          drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.2))
+          drop-shadow(-2px -2px 4px rgba(255, 255, 255, 0.3));
   letter-spacing: 0.05em;
+  text-shadow: 
+    3px 3px 0px rgba(0, 0, 0, 0.2),
+    6px 6px 0px rgba(0, 0, 0, 0.1),
+    -1px -1px 0px rgba(255, 255, 255, 0.5),
+    -2px -2px 0px rgba(255, 255, 255, 0.3);
+  transform: perspective(1200px) rotateX(5deg) rotateZ(0deg);
   /* removed font-weight: 900 to eliminate bold effect */
 }
 
@@ -29,7 +37,7 @@
   background: linear-gradient(120deg, #c0c0c0 0%, #e0e0e0 50%, #c0c0c0 100%);
 }
 
-/* Added metallic text effect with moving gradient */
+/* Added metallic text effect with moving gradient and 3D chrome */
 .metallic-text {
   background: linear-gradient(135deg, #e8e8e8 0%, #ffffff 39%, #9e9e9e 53%, #ffffff 77%, #e8e8e8 82%);
   background-size: 200% 100%;
@@ -38,7 +46,14 @@
   background-clip: text;
   /* increased animation duration from 5s to 12s for slower metallic effect */
   animation: metallicShine 12s linear infinite;
-}
+  filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.3))
+          drop-shadow(-2px -2px 4px rgba(255, 255, 255, 0.4));
+  text-shadow:
+    4px 4px 0px rgba(0, 0, 0, 0.25),
+    8px 8px 0px rgba(0, 0, 0, 0.15),
+    -2px -2px 0px rgba(255, 255, 255, 0.6),
+    -4px -4px 0px rgba(255, 255, 255, 0.4);
+  transform: perspective(1000px) rotateX(8deg) rotateY(-2deg);
 
 @keyframes metallicShine {
   0% {
