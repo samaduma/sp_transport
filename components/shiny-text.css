@@ -1,62 +1,91 @@
 .shiny-text {
-  /* Solid bold 3D chrome effect without animation */
-  color: #c0c0c0;
+  /* Polished chrome effect with reflective highlights */
+  background: linear-gradient(135deg, 
+    #ffffff 0%,
+    #e8e8e8 15%,
+    #b0b0b0 30%,
+    #808080 50%,
+    #a8a8a8 70%,
+    #e8e8e8 85%,
+    #ffffff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 900;
   display: inline-block;
-  filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.4)) 
-          drop-shadow(6px 6px 0px rgba(0, 0, 0, 0.3))
-          drop-shadow(9px 9px 0px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.5)) 
+          drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.3))
+          drop-shadow(6px 6px 0px rgba(0, 0, 0, 0.2));
   letter-spacing: 0.08em;
   text-shadow: 
-    -1px -1px 0px rgba(255, 255, 255, 0.6),
-    -2px -2px 0px rgba(255, 255, 255, 0.4),
-    2px 2px 0px rgba(0, 0, 0, 0.3),
+    -2px -2px 0px rgba(255, 255, 255, 0.8),
+    -3px -3px 0px rgba(255, 255, 255, 0.6),
+    2px 2px 0px rgba(0, 0, 0, 0.4),
+    3px 3px 0px rgba(0, 0, 0, 0.3),
     4px 4px 0px rgba(0, 0, 0, 0.2);
-  transform: perspective(1500px) rotateX(12deg) rotateY(-5deg) rotateZ(2deg);
+  transform: perspective(1200px) rotateX(10deg) rotateY(-3deg);
   transition: all 0.3s ease;
 }
 
 .shiny-text:hover {
-  transform: perspective(1500px) rotateX(8deg) rotateY(-8deg) rotateZ(2deg);
-  filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.5)) 
-          drop-shadow(8px 8px 0px rgba(0, 0, 0, 0.4))
-          drop-shadow(12px 12px 0px rgba(0, 0, 0, 0.3));
+  transform: perspective(1200px) rotateX(6deg) rotateY(-6deg);
+  filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.6)) 
+          drop-shadow(6px 6px 0px rgba(0, 0, 0, 0.4))
+          drop-shadow(9px 9px 0px rgba(0, 0, 0, 0.2));
 }
 
 .shiny-text.disabled {
   animation: none;
-  color: #a0a0a0;
+  background: linear-gradient(135deg, 
+    #e8e8e8 0%,
+    #c0c0c0 30%,
+    #808080 50%,
+    #c0c0c0 70%,
+    #e8e8e8 100%);
 }
 
-/* Removed metallic text animation - now using solid bold 3D effect */
+/* Polished chrome effect for metallic-text */
 .metallic-text {
-  color: #d0d0d0;
+  background: linear-gradient(135deg, 
+    #ffffff 0%,
+    #e8e8e8 15%,
+    #b0b0b0 30%,
+    #808080 50%,
+    #a8a8a8 70%,
+    #e8e8e8 85%,
+    #ffffff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 900;
   display: inline-block;
-  filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.4)) 
-          drop-shadow(6px 6px 0px rgba(0, 0, 0, 0.3))
-          drop-shadow(9px 9px 0px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.5)) 
+          drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.3))
+          drop-shadow(6px 6px 0px rgba(0, 0, 0, 0.2));
   letter-spacing: 0.08em;
   text-shadow:
-    -1px -1px 0px rgba(255, 255, 255, 0.7),
-    -2px -2px 0px rgba(255, 255, 255, 0.5),
-    2px 2px 0px rgba(0, 0, 0, 0.3),
-    4px 4px 0px rgba(0, 0, 0, 0.2),
-    6px 6px 0px rgba(0, 0, 0, 0.1);
-  transform: perspective(1500px) rotateX(12deg) rotateY(-5deg) rotateZ(2deg);
+    -2px -2px 0px rgba(255, 255, 255, 0.8),
+    -3px -3px 0px rgba(255, 255, 255, 0.6),
+    2px 2px 0px rgba(0, 0, 0, 0.4),
+    3px 3px 0px rgba(0, 0, 0, 0.3),
+    4px 4px 0px rgba(0, 0, 0, 0.2);
+  transform: perspective(1200px) rotateX(10deg) rotateY(-3deg);
   transition: all 0.3s ease;
 }
 
 .metallic-text:hover {
-  transform: perspective(1500px) rotateX(8deg) rotateY(-8deg) rotateZ(2deg);
-  filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.5)) 
-          drop-shadow(8px 8px 0px rgba(0, 0, 0, 0.4))
-          drop-shadow(12px 12px 0px rgba(0, 0, 0, 0.3));
-  color: #e0e0e0;
+  transform: perspective(1200px) rotateX(6deg) rotateY(-6deg);
+  filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.6)) 
+          drop-shadow(6px 6px 0px rgba(0, 0, 0, 0.4))
+          drop-shadow(9px 9px 0px rgba(0, 0, 0, 0.2));
 }
 
 .metallic-text.disabled {
   animation: none;
-  color: #b0b0b0;
-  transform: perspective(1500px) rotateX(5deg) rotateY(-2deg);
+  background: linear-gradient(135deg, 
+    #e8e8e8 0%,
+    #c0c0c0 30%,
+    #808080 50%,
+    #c0c0c0 70%,
+    #e8e8e8 100%);
 }
