@@ -10,13 +10,8 @@ interface ShinyTextProps {
 }
 
 const ShinyText = ({ text, disabled = false, speed = 5, className = "" }: ShinyTextProps) => {
-  const animationDuration = `${speed}s`
-
   return (
-    <div
-      className={`shiny-text metallic-text ${disabled ? "disabled" : ""} ${className}`}
-      style={{ animationDuration }}
-    >
+    <div className={`${className}`}>
       {text}
     </div>
   )
