@@ -11,9 +11,9 @@ interface ShinyTextProps {
 
 const ShinyText = ({ text, disabled = false, speed = 5, className = "" }: ShinyTextProps) => {
   return (
-    <div className={`${className}`}>
+    <h1 className={`liquid-chrome-text font-sans font-bold tracking-wider ${className}`}>
       {text}
-    </div>
+    </h1>
   )
 }
 
